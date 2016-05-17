@@ -19,6 +19,10 @@ class WP_Shortcode_Advertising_Settings {
         // Initial administration meun.
         add_action( 'admin_menu', array( 'WP_Shortcode_Advertising_Settings', 'menu_items' ) );
         
+        // Insert field to profile options page.
+        add_action('show_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
+		add_action('edit_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
+
         // Insert setting link to plugin list.
         add_filter( 'plugin_action_links_' . SA_PLUGIN_PATH, array( 'WP_Shortcode_Advertising_Settings', 'add_settings_link_to_plugin_actions' ) );
     }
@@ -60,7 +64,7 @@ class WP_Shortcode_Advertising_Settings {
 			__( 'Shortcode AD', 'wp-shortcode-advertising' ),
 			'manage_options',
 			self::SA_PLUGIN_SETTINGS_SLUG,
-			array( $this, 'render_settings_page' )
+			array( 'WP_Shortcode_Advertising_Settings', 'render_settings_page' )
 		);
 	}
 	
@@ -75,5 +79,17 @@ class WP_Shortcode_Advertising_Settings {
 		}
 
 		settings_errors();
+	}
+	
+	/**
+	 * Render extra profile options.
+	 * 
+	 * @since 0.1
+	 */
+	public static function render_extra_profile_options() {
+		// Check user has author permission.
+		if( current_user_can( 'publish_posts' ) ) {
+			include_once( dirname( __FILE__ ) . '/template-profile-options.php' );
+		}
 	}
 }

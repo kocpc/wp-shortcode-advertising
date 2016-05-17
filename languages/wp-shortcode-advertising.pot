@@ -5,3 +5,19 @@ msgstr ""
 #. Admin meun title.
 msgid "Shortcode AD"
 msgstr ""
+
+#. Profile options page title
+msgid "Advertising Code"
+msgstr ""
+
+#. Profile option field title: Default Advertising
+msgid "Default Advertising"
+msgstr ""
+
+#. Profile option field title: Mobile Advertising
+msgid "Mobile Advertising"
+msgstr ""
+
+#. Notice in profile options page
+msgid "(Optional) If you fill in this field, mobile device will load this advertising code."
+msgstr ""
