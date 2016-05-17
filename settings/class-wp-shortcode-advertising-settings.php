@@ -60,12 +60,12 @@ class WP_Shortcode_Advertising_Settings {
 			__( 'Shortcode AD', 'wp-shortcode-advertising' ),
 			'manage_options',
 			self::SA_PLUGIN_SETTINGS_SLUG,
-			'render_settings_page'
+			array( $this, 'render_settings_page' )
 		);
 	}
 	
 	/**
-	 * Render option page.
+	 * Render WP Shortcode Advertising option page.
 	 * 
 	 * @since 0.1
 	 */
