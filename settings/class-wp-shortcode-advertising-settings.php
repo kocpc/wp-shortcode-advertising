@@ -115,7 +115,7 @@ class WP_Shortcode_Advertising_Settings {
 	 */
 	public static function update_extra_profile_options( $user_id ) {
 		// Check user has author permission.
-		if( ! current_user_can( 'publish_posts' ) ) {
+		if ( ! current_user_can( 'edit_posts' ) || ! current_user_can( 'edit_pages' ) ) {
 			return false;
 		}
 		
