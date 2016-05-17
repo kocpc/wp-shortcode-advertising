@@ -96,15 +96,17 @@ class WP_Shortcode_Advertising_Settings {
 	 * @since 0.1
 	 */
 	public static function render_extra_profile_options( $user ) {
-		// Check user has author permission.
-		if ( current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) ) {
-			$current_advertising = [
-				'default' => $user->get( 'wpsa-default' ),
-				'mobile' => $user->get( 'wpsa-default-mobile' )
-				];
-
-			include_once( dirname( __FILE__ ) . '/template-profile-options.php' );
+		// Check user can edit post and page, prove author permission.
+		if ( ! current_user_can( 'edit_posts' ) || ! current_user_can( 'edit_pages' ) ) {
+			return false;
 		}
+		
+		$current_advertising = [
+			'default' => $user->get( 'wpsa-default' ),
+			'mobile' => $user->get( 'wpsa-default-mobile' )
+			];
+
+		include_once( dirname( __FILE__ ) . '/template-profile-options.php' );
 	}
 	
 	/**
