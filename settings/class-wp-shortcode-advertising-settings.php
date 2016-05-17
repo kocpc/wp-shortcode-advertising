@@ -49,7 +49,7 @@ class WP_Shortcode_Advertising_Settings {
 	}
 	
 	/**
-	 * Creates the menu items for FB Instant Article in WordPress side menu.
+	 * Creates the option page.
 	 * This function refer from facebook-instant-articles-wp.
 	 *
 	 * @since 0.1
@@ -59,7 +59,21 @@ class WP_Shortcode_Advertising_Settings {
 			__( 'WP Shortcode Advertising Settings', 'wp-shortcode-advertising' ),
 			__( 'Shortcode AD', 'wp-shortcode-advertising' ),
 			'manage_options',
-			self::SA_PLUGIN_SETTINGS_SLUG
+			self::SA_PLUGIN_SETTINGS_SLUG,
+			'render_settings_page'
 		);
+	}
+	
+	/**
+	 * Render option page.
+	 * 
+	 * @since 0.1
+	 */
+	public static function render_settings_page() {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html( 'You do not have sufficient permissions to access this page.' ) );
+		}
+
+		settings_errors();
 	}
 }
