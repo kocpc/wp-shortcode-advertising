@@ -4,7 +4,7 @@
  *
  * Plugin Name: WP Shortcode Advertising
  * Description: A plugin that allow you to insert advertising via shortcode.
- * Author: Hiram Huang
+ * Author: Hiram Huang <me@hiram.tw>
  * Author URI: https://www.facebook.com/naxqihao
  * Version: 0.1
  * Text Domain: wp-shortcode-advertising
@@ -12,6 +12,7 @@
  * License: MIT
  * License URI: https://opensource.org/licenses/MIT
  *
+ * @author      Hiram Huang <me@hiram.tw>
  * @package		wp-shortcode-advertising
  * @since		0.1
  */

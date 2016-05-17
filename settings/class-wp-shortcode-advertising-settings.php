@@ -2,8 +2,9 @@
 /**
  * WP Shortcode Advertising
  * 
+ * @author 	Hiram Huang <me@hiram.tw>
  * @package wp-shortode-advertising
- * @since 0.1
+ * @since 	0.1
  */
 
 class WP_Shortcode_Advertising_Settings {

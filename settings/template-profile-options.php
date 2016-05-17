@@ -2,7 +2,9 @@
 /**
  * WP Shortcode Advertising
  * 
- * @since 0.1
+ * @author  Hiram Huang <me@hiram.tw>
+ * @package wp-shortcode-advertising
+ * @since   0.1
  */
 ?>
 <h2><?php _e( 'Advertising Code', 'wp-shortcode-advertising' ); ?></h2>

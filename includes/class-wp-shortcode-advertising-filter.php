@@ -3,8 +3,9 @@
  * WP Shortcode Advertising
  * Filting shortcode covert to advertising code.
  * 
+ * @author  Hiram Huang <me@hiram.tw>
  * @package wp-shortcode-advertising
- * @since 0.1
+ * @since   0.1
  */
 
 class WP_Shortcode_Advertising_Filter {
