@@ -20,9 +20,13 @@ class WP_Shortcode_Advertising_Settings {
         add_action( 'admin_menu', array( 'WP_Shortcode_Advertising_Settings', 'menu_items' ) );
         
         // Insert field to profile options page.
-        add_action('show_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
-		add_action('edit_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
+        add_action( 'show_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
+		add_action( 'edit_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
 
+		// Receive profile options update data.
+		add_action( 'personal_options_update', array( 'WP_Shortcode_Advertising_Settings', 'update_extra_profile_options' ) );
+		add_action( 'edit_user_profile_update', array( 'WP_Shortcode_Advertising_Settings', 'update_extra_profile_options' ) );
+		
         // Insert setting link to plugin list.
         add_filter( 'plugin_action_links_' . SA_PLUGIN_PATH, array( 'WP_Shortcode_Advertising_Settings', 'add_settings_link_to_plugin_actions' ) );
     }
@@ -84,12 +88,43 @@ class WP_Shortcode_Advertising_Settings {
 	/**
 	 * Render extra profile options.
 	 * 
+	 * @param object WP_User
 	 * @since 0.1
 	 */
-	public static function render_extra_profile_options() {
+	public static function render_extra_profile_options( $user ) {
 		// Check user has author permission.
 		if( current_user_can( 'publish_posts' ) ) {
+			$current_advertising = [
+				'default' => $user->get( 'wpsa-default' ),
+				'mobile' => $user->get( 'wpsa-default-mobile' )
+				];
+
 			include_once( dirname( __FILE__ ) . '/template-profile-options.php' );
+		}
+	}
+	
+	/**
+	 * Update extra profile options.
+	 * 
+	 * @param int $user_id User's ID.
+	 * @since 0.1
+	 */
+	public static function update_extra_profile_options( $user_id ) {
+		// Check user has author permission.
+		if( ! current_user_can( 'publish_posts' ) ) {
+			return false;
+		}
+		
+		// Update user meta with advertising code.
+		if( $_POST['wpsa-default-advertising-code'] ) {
+			update_user_meta( absint( $user_id ), 'wpsa-default', $_POST['wpsa-default-advertising-code'] );
+		} else {
+			update_user_meta( absint( $user_id ), 'wpsa-default', '' );
+		}
+		if( $_POST['wpsa-default-advertising-code-mobile'] ) {
+			update_user_meta( absint( $user_id ), 'wpsa-default-mobile', $_POST['wpsa-default-advertising-code-mobile'] );
+		} else {
+			delete_user_meta( absint( $user_id ), 'wpsa-default-mobile' );
 		}
 	}
 }
