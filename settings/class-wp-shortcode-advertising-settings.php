@@ -97,7 +97,7 @@ class WP_Shortcode_Advertising_Settings {
 	 */
 	public static function render_extra_profile_options( $user ) {
 		// Check user has author permission.
-		if( current_user_can( 'publish_posts' ) ) {
+		if ( current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) ) {
 			$current_advertising = [
 				'default' => $user->get( 'wpsa-default' ),
 				'mobile' => $user->get( 'wpsa-default-mobile' )
