@@ -9,8 +9,8 @@
  * Version: 0.1
  * Text Domain: wp-shortcode-advertising
  * Domain Path: /languages
- * License: MIT
- * License URI: https://opensource.org/licenses/MIT
+ * License: GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  * @author      Hiram Huang <me@hiram.tw>
  * @package		wp-shortcode-advertising
