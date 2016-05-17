@@ -1,0 +1,7 @@
+#. Admin page title.
+msgid "WP Shortcode Advertising Settings"
+msgstr ""
+
+#. Admin meun title.
+msgid "Shortcode AD"
+msgstr ""
