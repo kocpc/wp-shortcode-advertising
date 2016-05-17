@@ -55,7 +55,7 @@ class WP_Shortcode_Advertising_Settings {
 	 * @since 0.1
 	 */
 	public static function menu_items() {
-		add_menu_page(
+		add_options_page(
 			__( 'WP Shortcode Advertising Settings', 'wp-shortcode-advertising' ),
 			__( 'Shortcode AD', 'wp-shortcode-advertising' ),
 			'manage_options',
