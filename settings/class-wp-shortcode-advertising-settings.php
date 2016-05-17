@@ -16,6 +16,7 @@ class WP_Shortcode_Advertising_Settings {
      * @since 0.1
      */
     public static function init() {
+        // Insert setting link to plugin list.
         add_filter( 'plugin_action_links_' . SA_PLUGIN_PATH, array( 'WP_Shortcode_Advertising_Settings', 'add_settings_link_to_plugin_actions' ) );
     }
     
