@@ -17,8 +17,11 @@ class WP_Shortcode_Advertising_Settings {
      * @since 0.1
      */
     public static function init() {
-        // Initial administration meun.
+        // Initial administration menu.
         add_action( 'admin_menu', array( 'WP_Shortcode_Advertising_Settings', 'menu_items' ) );
+        
+        // Register TinyMCE shortcode insert button when admin init.
+        add_action( 'admin_init', array( 'WP_Shortcode_Advertising_Settings', 'tinymce_shortcode_insert_button' ) );
         
         // Insert field to profile options page.
         add_action( 'show_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
@@ -128,4 +131,38 @@ class WP_Shortcode_Advertising_Settings {
 			delete_user_meta( absint( $user_id ), 'wpsa-default-mobile' );
 		}
 	}
+	
+	/**
+	 * TinyMCE shortcode insert button.
+	 * 
+	 * @since 0.1
+	 */
+	public static function tinymce_shortcode_insert_button() {
+		if ( current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) ) {
+			add_filter( 'mce_buttons_2', array( 'WP_Shortcode_Advertising_Settings', 'register_tinymce_shortcode_insert_button' ) );
+			add_filter( 'mce_external_plugins', array( 'WP_Shortcode_Advertising_Settings', 'insert_tinymce_script_into_list' ) );
+		}
+	}
+
+	/**
+	 * Register shortcode insert button to TinyMCE.
+	 * 
+	 * @param array $buttons Current TinyMCE buttons.
+	 * @since 0.1
+	 */
+	public static function register_tinymce_shortcode_insert_button( $buttons ) {
+		array_push( $buttons, 'wpsa-shortcode' );
+		return $buttons;
+	}
+	
+	/**
+	 * Add script into TinyMCE plugin list.
+	 * 
+	 * @param array $plugins Plugin list.
+	 * @since 0.1
+	 */
+	 public static function insert_tinymce_script_into_list( $plugins ) {
+	 	$plugins['wpsa_shortcode'] = plugins_url( 'js/tinymce.js', SA_PLUGIN_PATH_FULL );
+	 	return $plugins;
+	 }
 }
