@@ -1,3 +1,0 @@
-#. Plugin setting
-msgid "Setting"
-msgstr ""
