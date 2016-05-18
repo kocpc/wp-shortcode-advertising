@@ -1,6 +1,6 @@
 === WP Shortcode Advertising ===
 Contributors: qihaohuang
-Donate link: https://qr.allpay.com.tw/cDv2p
+Donate link: https://goo.gl/3IOmQq
 Tags: ad, Advertising
 Requires at least: 3.0.1
 Tested up to: 4.5.2
