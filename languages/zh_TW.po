@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_TW\n"
+
+#. Admin page title.
+msgid "WP Shortcode Advertising Settings"
+msgstr "WP 短碼置入廣告"
+
+#. Admin meun title.
+msgid "Shortcode AD"
+msgstr "短碼廣告"
+
+#. Profile options page title
+msgid "Advertising Code"
+msgstr "廣告代碼"
+
+#. Profile option field title: Default Advertising
+msgid "Default Advertising"
+msgstr "預設廣告"
+
+#. Profile option field title: Mobile Advertising
+msgid "Mobile Advertising"
+msgstr "行動版廣告"
+
+#. Notice in profile options page
+msgid ""
+"(Optional) If you fill in this field, mobile device will load this "
+"advertising code."
+msgstr "（選擇性）如果您填入此欄位，行動裝置將載入該廣告代碼。"
