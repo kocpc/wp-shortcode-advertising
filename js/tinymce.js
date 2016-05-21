@@ -7,7 +7,7 @@
                */
                editor.addButton( 'wpsa-shortcode', {
                     title : 'Insert AD',
-                    image : '../wp-content/plugins/wp-shortcode-advertising/images/advertising.png',
+                    image: url + '/../images/advertising.png',
                     onclick : function() {
                          editor.selection.setContent('[insert-ad]');
                     }
