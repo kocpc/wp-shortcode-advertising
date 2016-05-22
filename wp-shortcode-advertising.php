@@ -14,7 +14,7 @@
  *
  * @author      Hiram Huang <me@hiram.tw>
  * @package		wp-shortcode-advertising
- * @since		0.1
+ * @since		0.3
  */
 
 if( ! defined( 'ABSPATH' ) ) {
