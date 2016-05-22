@@ -27,7 +27,7 @@ if( ! defined( 'ABSPATH' ) ) {
  * Define plugin information.
  * Part reference facebook-instant-articles-wp.
  */
-define( 'SA_PLUGIN_VERSION', '0.1' );
+define( 'SA_PLUGIN_VERSION', '0.3' );
 define( 'SA_PLUGIN_PATH_FULL', __FILE__ );
 define( 'SA_PLUGIN_PATH', plugin_basename( __FILE__ ) );
 define( 'SA_PLUGIN_FILE_BASENAME', pathinfo( __FILE__, PATHINFO_FILENAME ) );
