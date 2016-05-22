@@ -10,11 +10,11 @@ msgstr ""
 "X-Generator: Poedit 1.8.7\n"
 "Last-Translator: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: zh_CN\n"
+"Language: zh_TW\n"
 
 #. Admin page title.
 msgid "WP Shortcode Advertising Settings"
-msgstr "WP 短码置入广告"
+msgstr "WP 短码广告设定"
 
 #. Admin meun title.
 msgid "Shortcode AD"
@@ -30,10 +30,25 @@ msgstr "预设广告"
 
 #. Profile option field title: Mobile Advertising
 msgid "Mobile Advertising"
-msgstr "移动广告"
+msgstr "行动装置"
 
+#. Profile option field title: Tablet Advertising
+msgid "Tablet Advertising"
+msgstr "平板电脑"
+
+# Mobile
 #. Notice in profile options page
 msgid ""
 "(Optional) If you fill in this field, mobile device will load this "
 "advertising code."
-msgstr "（选择性）如果您填入此栏位，移动装置将载入该广告代码。"
+msgstr ""
+"(选择性) 若您设定行动版广告代码，行动装置 (手机, 平板) 将使用本广告"
+"呈现。"
+
+# Tablet
+msgid ""
+"(Optional) If you fill in this field, tablet device will load this "
+"advertising code."
+msgstr ""
+"(选择性) 若您设定平板电脑版广告代码，平板电脑将使用本广告代码，而不"
+"是行动版或预设代码。"

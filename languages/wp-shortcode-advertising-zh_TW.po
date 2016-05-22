@@ -14,7 +14,7 @@ msgstr ""
 
 #. Admin page title.
 msgid "WP Shortcode Advertising Settings"
-msgstr "WP 短碼置入廣告"
+msgstr "WP 短碼廣告設定"
 
 #. Admin meun title.
 msgid "Shortcode AD"
@@ -30,10 +30,25 @@ msgstr "預設廣告"
 
 #. Profile option field title: Mobile Advertising
 msgid "Mobile Advertising"
-msgstr "行動版廣告"
+msgstr "行動裝置"
 
+#. Profile option field title: Tablet Advertising
+msgid "Tablet Advertising"
+msgstr "平板電腦"
+
+# Mobile
 #. Notice in profile options page
 msgid ""
 "(Optional) If you fill in this field, mobile device will load this "
 "advertising code."
-msgstr "（選擇性）如果您填入此欄位，行動裝置將載入該廣告代碼。"
+msgstr ""
+"(選擇性) 若您設定行動版廣告代碼，行動裝置 (手機, 平板) 將使用本廣告"
+"呈現。"
+
+# Tablet
+msgid ""
+"(Optional) If you fill in this field, tablet device will load this "
+"advertising code."
+msgstr ""
+"(選擇性) 若您設定平板電腦版廣告代碼，平板電腦將使用本廣告代碼，而不"
+"是行動版或預設代碼。"
