@@ -18,6 +18,14 @@ msgstr ""
 msgid "Mobile Advertising"
 msgstr ""
 
+#. Profile option field title: Tablet Advertising
+msgid "Tablet Advertising"
+msgstr ""
+
 #. Notice in profile options page
+# Mobile
 msgid "(Optional) If you fill in this field, mobile device will load this advertising code."
+msgstr ""
+# Tablet
+msgid "(Optional) If you fill in this field, tablet device will load this advertising code."
 msgstr ""

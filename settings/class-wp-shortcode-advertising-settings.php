@@ -106,7 +106,8 @@ class WP_Shortcode_Advertising_Settings {
 		
 		$current_advertising = [
 			'default' => $user->get( 'wpsa-default' ),
-			'mobile' => $user->get( 'wpsa-default-mobile' )
+			'mobile' => $user->get( 'wpsa-default-mobile' ),
+			'tablet' => $user->get( 'wpsa-default-tablet' )
 			];
 
 		include_once( dirname( __FILE__ ) . '/template-profile-options.php' );
@@ -128,12 +129,17 @@ class WP_Shortcode_Advertising_Settings {
 		if( $_POST['wpsa-default-advertising-code'] ) {
 			update_user_meta( absint( $user_id ), 'wpsa-default', $_POST['wpsa-default-advertising-code'] );
 		} else {
-			update_user_meta( absint( $user_id ), 'wpsa-default', '' );
+			delete_user_meta( absint( $user_id ), 'wpsa-default-default' );
 		}
 		if( $_POST['wpsa-default-advertising-code-mobile'] ) {
 			update_user_meta( absint( $user_id ), 'wpsa-default-mobile', $_POST['wpsa-default-advertising-code-mobile'] );
 		} else {
 			delete_user_meta( absint( $user_id ), 'wpsa-default-mobile' );
+		}
+		if( $_POST['wpsa-default-advertising-code-tablet'] ) {
+			update_user_meta( absint( $user_id ), 'wpsa-default-tablet', $_POST['wpsa-default-advertising-code-tablet'] );
+		} else {
+			delete_user_meta( absint( $user_id ), 'wpsa-default-tablet' );
 		}
 	}
 	
