@@ -13,10 +13,10 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  * @author      Hiram Huang <me@hiram.tw>
- * @package		wp-shortcode-advertising
+ * @package     wp-shortcode-advertising
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
  * @link        Github Repo: https://github.com/chown9835/wp-shortcode-advertising
- * @since		0.3
+ * @since       0.3
  */
 
 if( ! defined( 'ABSPATH' ) ) {
