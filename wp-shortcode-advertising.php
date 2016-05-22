@@ -9,11 +9,13 @@
  * Version: 0.3
  * Text Domain: wp-shortcode-advertising
  * Domain Path: /languages
- * License: GPLv2 or later
+ * License: GPLv2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  * @author      Hiram Huang <me@hiram.tw>
  * @package		wp-shortcode-advertising
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html
+ * @link        Github Repo: https://github.com/chown9835/wp-shortcode-advertising
  * @since		0.3
  */
 
