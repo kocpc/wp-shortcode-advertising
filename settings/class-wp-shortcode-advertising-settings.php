@@ -33,6 +33,9 @@ class WP_Shortcode_Advertising_Settings {
 		
         // Insert setting link to plugin list.
         add_filter( 'plugin_action_links_' . SA_PLUGIN_PATH, array( 'WP_Shortcode_Advertising_Settings', 'add_settings_link_to_plugin_actions' ) );
+        
+        // Load languages
+        add_action( 'plugins_loaded', array( 'WP_Shortcode_Advertising_Settings', 'load_textdomain' ) );
     }
     
     /**
@@ -166,5 +169,14 @@ class WP_Shortcode_Advertising_Settings {
 	 public static function insert_tinymce_script_into_list( $plugins ) {
 	 	$plugins['wpsa_shortcode'] = plugins_url( 'js/tinymce.js', SA_PLUGIN_PATH_FULL );
 	 	return $plugins;
+	 }
+	 
+	 /**
+	  * Load languages
+	  * 
+	  * @since 0.3
+	  */
+	 public static function load_textdomain() {
+	 	load_plugin_textdomain( 'wp-shortcode-advertising', false, SA_PLUGIN_FILE_BASENAME . '/languages' );
 	 }
 }
