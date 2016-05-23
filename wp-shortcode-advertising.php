@@ -16,7 +16,7 @@
  * @package     wp-shortcode-advertising
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
  * @link        Github Repo: https://github.com/chown9835/wp-shortcode-advertising
- * @since       0.3
+ * @since       0.1
  */
 
 if( ! defined( 'ABSPATH' ) ) {
