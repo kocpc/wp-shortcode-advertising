@@ -37,8 +37,8 @@ define( 'SA_PLUGIN_TEXT_DOMAIN', 'wp-shortcode-advertising' );
 /**
  * Import plugin classes.
  */
-require_once( dirname( __FILE__ ) . '/settings/class-wp-shortcode-advertising-settings.php' );
-require_once( dirname( __FILE__ ) . '/includes/class-wp-shortcode-advertising-filter.php' );
+require_once( SA_PLUGIN_BASE_FULL . '/settings/class-wp-shortcode-advertising-settings.php' );
+require_once( SA_PLUGIN_BASE_FULL . '/includes/class-wp-shortcode-advertising-filter.php' );
 
 /**
  * Initial plugin.
