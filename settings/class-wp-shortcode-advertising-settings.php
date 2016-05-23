@@ -18,7 +18,7 @@ class WP_Shortcode_Advertising_Settings {
      */
     public static function init() {
         // Initial administration menu.
-        add_action( 'admin_menu', array( 'WP_Shortcode_Advertising_Settings', 'menu_items' ) );
+        // add_action( 'admin_menu', array( 'WP_Shortcode_Advertising_Settings', 'menu_items' ) );
         
         // Register TinyMCE shortcode insert button when admin init.
         add_action( 'admin_init', array( 'WP_Shortcode_Advertising_Settings', 'tinymce_shortcode_insert_button' ) );
