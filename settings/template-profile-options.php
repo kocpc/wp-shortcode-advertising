@@ -6,6 +6,10 @@
  * @package wp-shortcode-advertising
  * @since   0.1
  */
+ 
+if( ! defined( 'ABSPATH' ) ) {
+	die( 'Do not direct access this file.' );
+}
 ?>
 <h2><?php _e( 'Advertising Code', SA_PLUGIN_TEXT_DOMAIN ); ?></h2>
 <table class="form-table">
