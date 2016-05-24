@@ -8,11 +8,11 @@ Stable tag: 0.3.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin that allow you to insert advertising via shortcode.
+Provide you a way insert advertisement to article/page use shortcode.
 
 == Description ==
 
-A plugin that allow you to insert advertising via shortcode.
+Provide you a way insert advertisement to article/page use shortcode.
 
 **Plugin Features**
 
