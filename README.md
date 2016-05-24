@@ -5,7 +5,7 @@
 [![Latest tested on WordPress](https://img.shields.io/wordpress/v/wp-shortcode-advertising.svg?style=flat-square)](https://wordpress.org/plugins/wp-shortcode-advertising/)
 [![License](https://img.shields.io/packagist/l/rilwis/wp-shortcode-advertising.svg?style=flat-square)](https://wordpress.org/plugins/wp-shortcode-advertising/)
 
-📲 A plugin that allow you to insert advertisement via shortcode.
+📲 Provide you a way insert advertisement to article/page use shortcode.
 
 ## Installation
 
