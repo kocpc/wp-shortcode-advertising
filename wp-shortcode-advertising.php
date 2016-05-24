@@ -6,7 +6,7 @@
  * Description: A plugin that allow you to insert advertising via shortcode.
  * Author: Hiram Huang <me@hiram.tw>
  * Author URI: https://www.facebook.com/naxqihao
- * Version: 0.3
+ * Version: 0.3.1
  * Text Domain: wp-shortcode-advertising
  * Domain Path: /languages
  * License: GPLv2
@@ -27,7 +27,7 @@ if( ! defined( 'ABSPATH' ) ) {
  * Define plugin information.
  * Part reference facebook-instant-articles-wp.
  */
-define( 'SA_PLUGIN_VERSION', '0.3' );
+define( 'SA_PLUGIN_VERSION', '0.3.1' );
 define( 'SA_PLUGIN_PATH_FULL', __FILE__ );
 define( 'SA_PLUGIN_BASE_FULL', dirname(__FILE__) );
 define( 'SA_PLUGIN_PATH', plugin_basename( __FILE__ ) );
