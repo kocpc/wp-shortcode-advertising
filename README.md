@@ -11,8 +11,7 @@
 
 You can manually install this plugin from source code.
 
-1. Go https://github.com/chown9835/wp-shortcode-advertising/releases and download latest version zip file (wp-shortcode-advertising.zip).
-1. Upload zip file to your WordPress site.
+1. Go WordPress admin, use keyword "wp shortcode advertising" to search, and install.
 1. Active plugin.
 1. Go to user profile setting page, set advertising code.
 1. Edit your post or page, and insert shortcode [insert-ad].
