@@ -20,6 +20,8 @@
 
 ## Thanks
 
+* [Shen Cheng Ta](https://www.facebook.com/kocpc) : Concept generation.
+* [電腦王阿達的 3C 胡言亂語](https://www.kocpc.com.tw) : Production environment test.
 * [Mobile Detect](http://mobiledetect.net/) : A good library for detect mobile device type.
 * [Chris Chang](https://github.com/chris1004tw) : Translation.
 * [WordPress](https://wordpress.com) : Awesome platform for blogging.
