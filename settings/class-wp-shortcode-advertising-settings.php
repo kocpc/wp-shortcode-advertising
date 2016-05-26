@@ -26,7 +26,7 @@ class WP_Shortcode_Advertising_Settings {
         // Insert field to profile options page.
         add_action( 'show_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
 		add_action( 'edit_user_profile', array( 'WP_Shortcode_Advertising_Settings', 'render_extra_profile_options' ) );
-
+		
 		// Receive profile options update data.
 		add_action( 'personal_options_update', array( 'WP_Shortcode_Advertising_Settings', 'update_extra_profile_options' ) );
 		add_action( 'edit_user_profile_update', array( 'WP_Shortcode_Advertising_Settings', 'update_extra_profile_options' ) );
@@ -104,11 +104,11 @@ class WP_Shortcode_Advertising_Settings {
 			return false;
 		}
 		
-		$current_advertising = [
+		$current_advertising = array(
 			'default' => $user->get( 'wpsa-default' ),
 			'mobile' => $user->get( 'wpsa-default-mobile' ),
 			'tablet' => $user->get( 'wpsa-default-tablet' )
-			];
+		);
 
 		include_once( dirname( __FILE__ ) . '/template-profile-options.php' );
 	}
