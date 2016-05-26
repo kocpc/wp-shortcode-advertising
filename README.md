@@ -18,6 +18,9 @@
 
 ![Settings](assets/option-page-screenshot.png)
 
+## Pre-release Feature
+1. Allow user/global to set advertisement top and bottom padding.
+
 ## Thanks
 
 * [Shen Cheng Ta](https://www.facebook.com/kocpc) : Concept generation.
