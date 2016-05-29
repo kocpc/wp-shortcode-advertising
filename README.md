@@ -20,6 +20,7 @@
 
 ## Pre-release Feature
 1. Allow user/global to set advertisement top and bottom padding.
+2. Global default advertisement.
 
 ## Thanks
 
