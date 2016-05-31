@@ -1,9 +1,10 @@
 # WP Shortcode Advertising
-[![Stars](https://img.shields.io/wordpress/plugin/r/wp-shortcode-advertising.svg?style=flat-square)](http://wordpress.org/plugins/wp-shortcode-advertising/)
-[![Total Downloads](https://img.shields.io/wordpress/plugin/dt/wp-shortcode-advertising.svg?style=flat-square)](http://wordpress.org/plugins/wp-shortcode-advertising/)
-[![Plugin Version](https://img.shields.io/wordpress/plugin/v/wp-shortcode-advertising.svg?style=flat-square)](https://wordpress.org/plugins/wp-shortcode-advertising/)
-[![Latest tested on WordPress](https://img.shields.io/wordpress/v/wp-shortcode-advertising.svg?style=flat-square)](https://wordpress.org/plugins/wp-shortcode-advertising/)
-[![License](https://img.shields.io/packagist/l/rilwis/wp-shortcode-advertising.svg?style=flat-square)](https://wordpress.org/plugins/wp-shortcode-advertising/)
+[![Stars](https://img.shields.io/wordpress/plugin/r/wp-shortcode-advertising.svg)](http://wordpress.org/plugins/wp-shortcode-advertising/)
+[![Total Downloads](https://img.shields.io/wordpress/plugin/dt/wp-shortcode-advertising.svg)](http://wordpress.org/plugins/wp-shortcode-advertising/)
+[![Plugin Version](https://img.shields.io/wordpress/plugin/v/wp-shortcode-advertising.svg)](https://wordpress.org/plugins/wp-shortcode-advertising/)
+[![Latest tested on WordPress](https://img.shields.io/wordpress/v/wp-shortcode-advertising.svg)](https://wordpress.org/plugins/wp-shortcode-advertising/)
+[![License](https://img.shields.io/packagist/l/rilwis/wp-shortcode-advertising.svg)](https://wordpress.org/plugins/wp-shortcode-advertising/)
+[![Stories in Ready](https://badge.waffle.io/kocpc/wp-shortcode-advertising.svg?label=ready&title=Todo)](http://waffle.io/kocpc/wp-shortcode-advertising)
 
 📲 Provide you a way insert advertisement to article/page use shortcode.
 
