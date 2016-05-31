@@ -8,7 +8,9 @@
 📲 Provide you a way insert advertisement to article/page use shortcode.
 
 ## Installation
-1. Go WordPress admin, use keyword "wp shortcode advertising" to search, and install.
+WP Shortcode Advertising now is available on WordPress.org: [https://wordpress.org/plugins/wp-shortcode-advertising/](https://wordpress.org/plugins/wp-shortcode-advertising/)
+
+1. Go WordPress admin, use keyword "wp shortcode advertising" to search, and install. (OR download from [WordPress.org](https://wordpress.org/plugins/wp-shortcode-advertising/) and upload to site.)
 1. Active plugin.
 1. Go to user profile setting page, set advertising code.
 1. Edit your post or page, and insert shortcode [insert-ad].
