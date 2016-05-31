@@ -21,9 +21,8 @@ WP Shortcode Advertising now is available on WordPress.org: [https://wordpress.o
 
 ![Settings](assets/option-page-screenshot.png)
 
-## Pre-release Feature
-1. Allow user/global to set advertisement top and bottom padding.
-2. Global default advertisement.
+## Todos
+Todo list: [Issues with Ready label on Github](https://github.com/kocpc/wp-shortcode-advertising/issues?q=is%3Aissue+is%3Aopen+label%3Aready)
 
 ## Thanks
 
