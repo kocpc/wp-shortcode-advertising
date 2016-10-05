@@ -43,11 +43,11 @@ class WP_Shortcode_Advertising_Filter {
         // Get author id and advertising code
         $post_id = get_the_ID();
         $post_author_id = get_post_field( 'post_author', $post_id );
-        $advertising_code = [
+        $advertising_code = array(
             'default'   => get_the_author_meta( 'wpsa-default', $post_author_id ),
             'mobile'    => get_the_author_meta( 'wpsa-default-mobile', $post_author_id ),
             'tablet'    => get_the_author_meta( 'wpsa-default-tablet', $post_author_id )
-            ];
+            );
         
         // Import Mobile-Detect library
         require_once( SA_PLUGIN_BASE_FULL . '/includes/mobile-detect.php' );
